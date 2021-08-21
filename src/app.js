@@ -14,7 +14,7 @@ const app = express();
 app.set("port", process.env.PORT || 3000);
 
 //Obtengo las variables de entorno del archivo .env
-dotenv.config({ path: "./.env" });
+dotenv.config();
 
 //Asigno la variable pkg para obtener los datos del packaje json
 /* app.set("pkg", pkg); */

@@ -7,13 +7,8 @@ const router = Router();
 //Actualizo los datos del usuario
 router.put("/", authJwt.verifyToken, userCtrl.updateUser);
 
-//Obtengo la lista de amigos del usuario
-router.get("/:username", (req, res) => {
-  res.json({ message: "buscar" });
-});
-//Actualizo los datos del usuario
-router.put("/", (req, res) => {
-  res.json({ message: "usuario actualizado" });
-});
+
+//busco el usuario
+router.get("/", userCtrl.findUser);
 
 export default router;
