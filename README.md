@@ -1,8 +1,8 @@
 # VIDEOGAME-RICK-AND-MORTY
 
 > API con los requerimientos solicitados en el documento
-[Link del despliegue](https://game-rick-and-morty.herokuapp.com/)
-[Link de la documentación mas detallada](https://documenter.getpostman.com/view/14008486/TzzDJEck)
+>[Link del despliegue](https://game-rick-and-morty.herokuapp.com/)
+>[Link de la documentación mas detallada](https://documenter.getpostman.com/view/14008486/TzzDJEck)
 
 ## Instalación
 Clonar el repositorio, abrir una terminal y ejecutar el siguiente comando
