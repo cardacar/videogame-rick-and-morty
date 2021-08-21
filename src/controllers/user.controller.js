@@ -73,13 +73,21 @@ export const findUser = async (req, res) => {
   //Obtengo el usuario del params
   const { username } = req.params;
   //Busco el usuario en la base de datos
-  const userFound = User.find({ username: username });
+  const userFound = await User.findOne({ username: username });
   //Borro la contraseña
-  userFound.password = 0;
   //Si el usuario existe mando el mensaje
   if (userFound) {
-    res.json({ message: "El usuario buscado es", userFound });
+    //Filtro los datos mas relevantes para mostrarselo al usuario
+    const findUser = {
+      fullName: userFound.fullName,
+      username: userFound.username,
+      email: userFound.email,
+      friends: userFound.friends,
+    }
+    res.json({ message: "El usuario buscado es", findUser });
+  }else{
+    //Si no existe
+    res.json({ message: "El usuario no existe" });
+
   }
-  //Si no existe
-  res.json({ message: "El usuario no existe" });
 };
