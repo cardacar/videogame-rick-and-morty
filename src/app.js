@@ -1,7 +1,7 @@
 import express from "express";
-import morgan from "morgan";
+/* import morgan from "morgan"; */
 import dotenv from "dotenv";
-import pkg from "../package.json";
+/* import pkg from "../package.json"; */
 import characterRoute from "./routes/character.routes";
 import sigInRoute from './routes/auth.routes'
 import registerRoute from './routes/register.routes'
@@ -17,10 +17,10 @@ app.set("port", process.env.PORT || 3000);
 dotenv.config({ path: "./.env" });
 
 //Asigno la variable pkg para obtener los datos del packaje json
-app.set("pkg", pkg);
+/* app.set("pkg", pkg); */
 
 //Middleware a usar
-app.use(morgan("dev")); //
+/* app.use(morgan("dev")); // */
 app.use(express.json());
 
 //Ruta inicial de la API donde muestro datos iniciales
