@@ -1,7 +1,8 @@
 # VIDEOGAME-RICK-AND-MORTY
 
 > API con los requerimientos solicitados en el documento
-
+[Link del despliegue](https://game-rick-and-morty.herokuapp.com/)
+[Link de la documentación mas detallada](https://documenter.getpostman.com/view/14008486/TzzDJEck)
 
 ## Instalación
 Clonar el repositorio, abrir una terminal y ejecutar el siguiente comando
@@ -16,5 +17,3 @@ Crear un archivo .env en la carpeta del proyecto y configurar las siguientes var
     MONGODB_USER=usuario de la base de datos
     MONGODB_DATABASE=database
     SECRET_JWT= secreto para JWT
-
-
