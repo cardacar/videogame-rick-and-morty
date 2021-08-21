@@ -9,7 +9,7 @@ import mongoose from 'mongoose';
     try {
         //me conecto a mongodb con mongoose
         const dbConection = await mongoose.connect(MONGODB_URI, {
-            useFindAndModify: true,
+            useFindAndModify: false,
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true
