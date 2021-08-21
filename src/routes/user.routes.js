@@ -9,6 +9,6 @@ router.put("/", authJwt.verifyToken, userCtrl.updateUser);
 
 
 //busco el usuario
-router.get("/", userCtrl.findUser);
+router.get("/:username", userCtrl.findUser);
 
 export default router;
