@@ -31,9 +31,10 @@ app.get("/", (req, res) => {
 //rav-> rick and morty videogame
 
 //Defino las rutas de la api
-app.use('/api/rav/character',characterRoute );
-app.use('/api/rav/register', registerRoute);
-app.use('/api/rav/logIn', sigInRoute);
-app.use('/api/rav/friend', friendRoute);
+app.use('/api-rav/character',characterRoute );
+app.use('/api-rav/register', registerRoute);
+app.use('/api-rav/logIn', sigInRoute);
+app.use('/api-rav/friend', friendRoute);
+app.use('/api-rav/user', userRoute);
 
 export default app;
